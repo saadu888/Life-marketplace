@@ -1,0 +1,22 @@
+body {
+    font-family: Arial;
+    text-align: center;
+    padding: 20px;
+    background: #f9f9f9;
+}
+
+#form-area input {
+    padding: 8px;
+    margin: 5px;
+}
+
+#market {
+    margin-top: 20px;
+}
+
+.item {
+    background: white;
+    padding: 10px;
+    border: 1px solid #ddd;
+    margin: 5px;
+}
