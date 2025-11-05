@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="ha">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Kasuwanci — Marketplace</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="topbar">
+    <div class="brand">Kasuwanci</div>
+    <div class="search">
+      <input id="searchInput" placeholder="Nemo kaya, wurare, mutane..." />
+    </div>
+    <button id="addBtn" class="btn primary">+ Saka Kaya</button>
+  </div>
+
+  <main class="wrap">
+    <aside class="leftcol">
+      <div class="profile">
+        <div class="avatar">U</div>
+        <div class="who">Sunanka</div>
+        <div class="small">Seller • 0 listings</div>
+      </div>
+
+      <nav class="filters">
+        <button class="filterBtn active" data-filter="all">Duka</button>
+        <button class="filterBtn" data-filter="electronics">Electronics</button>
+        <button class="filterBtn" data-filter="fashion">Fashion</button>
+        <button class="filterBtn" data-filter="services">Services</button>
+      </nav>
+    </aside>
+
+    <section class="feed">
+      <div id="listings" class="grid"></div>
+      <div id="empty" class="empty">Babu wani kaya a yanzu. Danna "Saka Kaya" don fara.</div>
+    </section>
+  </main>
+
+  <!-- Add / Edit Modal -->
+  <div id="modal" class="modal hidden">
+    <div class="modal-card">
+      <h3 id="modalTitle">Saka Sabon Kaya</h3>
+      <label>Sunann Kaya <input id="pName" /></label>
+      <label>Bayani <textarea id="pDesc"></textarea></label>
+      <label>Farashi (₦) <input id="pPrice" type="number" /></label>
+      <label>Kategoriya 
+        <select id="pCat">
+          <option value="electronics">Electronics</option>
+          <option value="fashion">Fashion</option>
+          <option value="services">Services</option>
+          <option value="other">Other</option>
+        </select>
+      </label>
+      <label>Hoton (URL) <input id="pImg" placeholder="https://..." /></label>
+
+      <div class="modal-actions">
+        <button id="saveBtn" class="btn primary">Ajiye</button>
+        <button id="cancelBtn" class="btn">Soke</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
